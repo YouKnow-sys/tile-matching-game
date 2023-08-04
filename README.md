@@ -9,5 +9,15 @@ I created this game to get to know vizia better and also create a more complex e
 
 You can find the executable for trying it out in **release** section.
 
+## Optional features
+- `serde`: if enabled game will save settings in `pwd` before closing the game, and load them whenever we start the game later.
+
+## Todo
+- [ ] add support for switching between dark and light theme
+- [ ] add a way to save and show highscores
+- [ ] maybe add sound effects
+
 ## Photos
+![main-menu](https://github.com/YouKnow-sys/tile-matching-game/assets/17937017/41fee449-f6f1-45a1-8b5f-1b5622f17fee)
+![playing](https://github.com/YouKnow-sys/tile-matching-game/assets/17937017/2527db10-ffa9-47ed-a172-c9daad03e577)
 
