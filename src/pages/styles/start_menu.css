@@ -1,0 +1,49 @@
+
+
+startscreen {
+    space: 1s;
+    row-between: 10px
+}
+
+startscreen label,
+startscreen button,
+startscreen .game-mode,
+startscreen .difficulty {
+    left: 1s;
+    right: 1s;
+}
+
+/* Remember to check later, if I dont do this the whole layout will get messed up */
+startscreen button,
+startscreen .game-mode,
+startscreen .difficulty {
+    width: 250px;
+    height: 50px;
+}
+
+startscreen .difficulty label,
+startscreen .game-mode label,
+startscreen .game-mode button,
+startscreen .difficulty spinbox {
+    height: 50px;
+}
+
+startscreen .difficulty label,
+startscreen .game-mode label {
+    child-top: 1s;
+    child-bottom: 1s;
+}
+
+startscreen .difficulty spinbox,
+startscreen .game-mode button {
+    width: 150px;
+}
+
+startscreen button label {
+    font-size: 20;
+}
+
+startscreen #title {
+    font-size: 100;
+    bottom: 30px;
+}

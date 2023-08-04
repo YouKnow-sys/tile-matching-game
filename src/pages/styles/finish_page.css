@@ -1,0 +1,26 @@
+finishedpage {
+    space: 1s;
+    row-between: 10px
+}
+
+finishedpage label {
+    font-size: 30;
+    left: 1s;
+    right: 1s;
+}
+
+finishedpage .title {
+    font-size: 100;
+    color: red;
+}
+
+finishedpage .title:checked {
+    font-size: 100;
+    color: green;
+}
+
+finishedpage button {
+    left: 1s;
+    right: 1s;
+    height: 50px;
+}

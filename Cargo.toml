@@ -1,0 +1,20 @@
+[package]
+name = "tile-matching-game"
+version = "0.1.0"
+authors = ["Saeid Ghafari <saeid025@yahoo.com>"]
+edition = "2021"
+description = "A simple tile matching game written in rust using Vizia GUI library"
+repository = "https://github.com/YouKnow-sys/tile-matching-game"
+license = "MIT"
+categories = ["games"]
+
+[dependencies]
+emojis = "0.6.0"
+rand = "0.8.5"
+serde = { version = "1.0.180", features = ["derive"], optional = true }
+serde_json = { version = "1.0.104", optional = true }
+vizia = { git = "https://github.com/vizia/vizia.git", version = "0.1.0" }
+
+[features]
+default = ["serde"]
+serde = ["dep:serde", "dep:serde_json"] # used for serialize and deserialize settings of the game

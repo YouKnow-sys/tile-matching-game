@@ -1,0 +1,48 @@
+gamescreen .tiles-area {
+    child-space: 15px;
+}
+
+gamescreen .topbar {
+    background-color: rgba(63, 78, 92, 0.856);
+    height: 50px;
+    row-between: 5px;
+    child-top: 1s;
+    child-right: 7px;
+    child-left: 7px;
+    child-bottom: 1s;
+}
+
+gamescreen vstack {
+    row-between: 5px;
+}
+
+gamescreen hstack {
+    col-between: 5px;
+}
+
+tile {
+    background-color: cornflowerblue;
+    font-size: 30;
+    border-radius: 5%;
+}
+
+tile:checked,
+tile:checked:active {
+    background-color: green;
+}
+
+tile:active {
+    background-color: rgb(75, 113, 184);
+}
+
+tile .inner {
+    opacity: 0.0;
+    transform: translateY(100px);
+    transition: transform 70ms, opacity 100ms;
+}
+
+tile .inner:checked {
+    opacity: 1.0;
+    transform: translateY(0px);
+    transition: transform 70ms, opacity 100ms;
+}
