@@ -56,7 +56,7 @@ impl Display for GameMode {
 )]
 #[derive(Lens)]
 pub struct GameData {
-    #[serde(skip)]
+    #[cfg_attr(feature = "serde", serde(skip))]
     pub page: Page,
     pub game_mode: GameMode,
     pub difficulty: usize,
